@@ -11,29 +11,42 @@
 
 /* Fonts */
     
-    $family: (
-        "Iosevka": url('https://cdnjs.cloudflare.com/ajax/libs/Iosevka/5.0.0-beta.1/iosevka/iosevka.css'),
-        "Ubuntu": url(''),
-    );
+    //$family: (
+    //    "Iosevka": url('https://cdnjs.cloudflare.com/ajax/libs/Iosevka/5.0.0-beta.1/iosevka/iosevka.css'),
+    //    //"Ubuntu": url(''),
+    //);
+//
+    //$family-icon: (
+    //    "Line-Awesome": url('https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.css'),
+    //    "Font Logos (Linux Distro)": url('https://cdnjs.cloudflare.com/ajax/libs/font-logos/0.15/font-logos.css'),
+    //    "Typicons": url('https://cdnjs.cloudflare.com/ajax/libs/typicons/2.1.2/typicons.css'),
+//
+    //    "Font Awesome": url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css'),
+    //    "FA Kit": url('https://kit.fontawesome.com/4e35d6f4b7.js'),
+    //);
+//
+    //$family-terminal: (
+    //   "Fira Code": url('https://cdnjs.cloudflare.com/ajax/libs/firacode/5.2.0/fira_code.css'),
+    //   "Hack": url('https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.css'),
+    //);
 
-    $family-icon: (
-        "Line-Awesome": url('https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.css'),
-        "Font Logos (Linux Distro)": url('https://cdnjs.cloudflare.com/ajax/libs/font-logos/0.15/font-logos.css'),
-        "Typicons": url('https://cdnjs.cloudflare.com/ajax/libs/typicons/2.1.2/typicons.css'),
+    $Iosevka: url('https://cdnjs.cloudflare.com/ajax/libs/Iosevka/5.0.0-beta.1/iosevka/iosevka.css');
+    //$Ubuntu: url('');
 
-        "Font Awesome": url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css'),
-        "FA Kit": url('https://kit.fontawesome.com/4e35d6f4b7.js'),
-    );
+    $Line-Awesome: url('https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.css');
+    $Font-Logos: url('https://cdnjs.cloudflare.com/ajax/libs/font-logos/0.15/font-logos.css');
+    $Typicons: url('https://cdnjs.cloudflare.com/ajax/libs/typicons/2.1.2/typicons.css');
+    $fa-font-path: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css');
+    $fa-font-kit: url('https://kit.fontawesome.com/4e35d6f4b7.js');
 
-    $family-terminal: (
-       "Fira Code": url('https://cdnjs.cloudflare.com/ajax/libs/firacode/5.2.0/fira_code.css'),
-       "Hack": url('https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.css'),
-    );
+    $Fira-Code: url('https://cdnjs.cloudflare.com/ajax/libs/firacode/5.2.0/fira_code.css');
+    $Hack: url('https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.css');
+
     
     .font {
-        --family: url('#{$family}');
-        --icon: url('#{$family-icon}');
-        --terminal: url('#{$family-terminal}');
+        --family: url('#{$Iosevka}',);
+        --icon: url('#{$Line-Awesome}', '#{$Font-Logos}', '#{$Typicons}', '#{$fa-font-path}',);
+        --terminal: url('#{$Fira-Code}', '#{$Hack}',);
         --weight: {
             regular: 400;
             medium: 600;
@@ -53,14 +66,14 @@
         width: 90%;
         margin: 0 auto;
         background: $background-color;
-        font: $font-family Ubuntu, $font-weight medium, $font-size medium, $text-color;
+        font: font-terminal Hack, font-weight medium, font-size medium, $text-color;
     }
 
     .main {
         width: 80%;
         margin: 0 auto;
         background: $background-transparent;
-        font: $font-family Iosevka, $font-weight regular, $font-size medium, $text-color;
+        font: font-family Iosevka, font-weight regular, font-size medium, $text-color;
 
         p {
             $font-size: regular;
