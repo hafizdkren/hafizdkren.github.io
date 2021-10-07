@@ -1,0 +1,34 @@
+/* Color library. */
+/* Fonts */
+.font {
+  --family: url("url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/5.0.0-beta.1/iosevka/iosevka.css")",);
+  --icon: url("url("https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.css")", "url("https://cdnjs.cloudflare.com/ajax/libs/font-logos/0.15/font-logos.css")", "url("https://cdnjs.cloudflare.com/ajax/libs/typicons/2.1.2/typicons.css")", "url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css")",);
+  --terminal: url("url("https://cdnjs.cloudflare.com/ajax/libs/firacode/5.2.0/fira_code.css")", "url("https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.css")",);
+  --weight: {
+      regular: 400;
+      medium: 600;
+      bold: 1000;
+  }
+  --size: {
+      regular: 12px;
+      medium: 20px;
+      large: 40px;
+  } ;
+}
+
+/* Body */
+body {
+  width: 90%;
+  margin: 0 auto;
+  background: #6d1df7;
+  font: font-terminal Hack, font-weight medium, font-size medium, #20045d;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  background: #6d1df752;
+  font: font-family Iosevka, font-weight regular, font-size medium, #20045d;
+}
+
+/*# sourceMappingURL=main-template.css.map */
