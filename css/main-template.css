@@ -1,4 +1,17 @@
 /* Color library. */
+.color {
+  --main: #2dc897;
+  --background: #6d1df7;
+  --accent: #1fa328;
+  --text: #20045d;
+}
+
+.transparent {
+  --main: #2dc89767;
+  --background: #6d1df752;
+  --accent: #1fa32854;
+}
+
 /* Fonts */
 .font {
   --family: url("url("https://cdnjs.cloudflare.com/ajax/libs/Iosevka/5.0.0-beta.1/iosevka/iosevka.css")",);
@@ -20,15 +33,15 @@
 body {
   width: 90%;
   margin: 0 auto;
-  background: #6d1df7;
-  font: font-terminal Hack, font-weight medium, font-size medium, #20045d;
+  background: color-background;
+  font: font-terminal Hack, font-weight medium, font-size medium, color-text;
 }
 
 .main {
   width: 80%;
   margin: 0 auto;
-  background: #6d1df752;
-  font: font-family Iosevka, font-weight regular, font-size medium, #20045d;
+  background: transparent-background;
+  font: font-family Iosevka, font-weight regular, font-size medium, color-text;
 }
 
 /*# sourceMappingURL=main-template.css.map */

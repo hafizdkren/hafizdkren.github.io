@@ -1,13 +1,18 @@
 /* Color library. */
 
-    $main-color: #2dc897;
-    $background-color: #6d1df7;
-    $accent-color: #1fa328;
-    $main-transparent: #2dc89767;
-    $background-transparent: #6d1df752;
-    $accent-transparent: #1fa32854;
+    .color {
+        --main: #2dc897;
+        --background: #6d1df7;
+        --accent: #1fa328;
+        --text: #20045d;
+    }
 
-    $text-color: #20045d;
+    .transparent {
+        --main: #2dc89767;
+        --background: #6d1df752;
+        --accent: #1fa32854;
+    }
+
 
 /* Fonts */
 
@@ -54,15 +59,15 @@
     body {
         width: 90%;
         margin: 0 auto;
-        background: $background-color;
-        font: font-terminal Hack, font-weight medium, font-size medium, $text-color;
+        background: color-background;
+        font: font-terminal Hack, font-weight medium, font-size medium, color-text;
     }
 
     .main {
         width: 80%;
         margin: 0 auto;
-        background: $background-transparent;
-        font: font-family Iosevka, font-weight regular, font-size medium, $text-color;
+        background: transparent-background;
+        font: font-family Iosevka, font-weight regular, font-size medium, color-text;
 
         p {
             $font-size: regular;
