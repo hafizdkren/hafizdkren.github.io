@@ -1,0 +1,86 @@
+/* 
+    ################################# Welcome to my SCSS files #################################
+
+    -This SCSS file contain my template for my blog layout
+    This is just a simple template I made to show my experience with web stacks.
+    (Also for learning about web thou...)
+
+    Please to using it with your own name for your site, but if you want to shouting to me, please credit me on to your website.
+
+*/ 
+
+//////////////////////////////// Color Schemes //////////////////////////////////////
+
+    $color: (
+        primary: #2dc897,
+        background: #6d1df7,
+        accent: #1fa328,
+        text: #20045d,
+    );
+
+    $transparent: (
+        primary: #2dc89767,
+        background: #6d1df752,
+        accent: #1fa32854,
+    );
+
+/* Fonts */
+
+//    @function family($Iosevka, ) {
+//
+//    }
+//
+//    @function icon($Line-Awesome, $Font-Logos, $Typicons, $fa-font-path, $fa-font-kit) {
+//        
+//    }
+
+    $Iosevka: url('https://cdnjs.cloudflare.com/ajax/libs/Iosevka/5.0.0-beta.1/iosevka/iosevka.css');
+    //$Ubuntu: url('');
+
+    $Line-Awesome: url('https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.css');
+    $Font-Logos: url('https://cdnjs.cloudflare.com/ajax/libs/font-logos/0.15/font-logos.css');
+    $Typicons: url('https://cdnjs.cloudflare.com/ajax/libs/typicons/2.1.2/typicons.css');
+    $fa-font-path: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.css');
+    $fa-font-kit: url('https://kit.fontawesome.com/4e35d6f4b7.js');
+
+    $Fira-Code: url('https://cdnjs.cloudflare.com/ajax/libs/firacode/5.2.0/fira_code.css');
+    $Hack: url('https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.css');
+
+    
+    .font {
+        --family: url('#{$Iosevka}',);
+        --icon: url('#{$Line-Awesome}', '#{$Font-Logos}', '#{$Typicons}', '#{$fa-font-path}',);
+        --terminal: url('#{$Fira-Code}', '#{$Hack}',);
+        --weight: {
+            regular: 400;
+            medium: 600;
+            bold: 1000;
+        }
+        --size: {
+            regular: 12px;
+            medium: 20px;
+            large: 40px;
+        }
+    
+    }
+
+/* Body */
+
+    body {
+        width: 90%;
+        margin: 0 auto;
+        background: color-background;
+        font: font-terminal Hack, font-weight medium, font-size medium;
+    }
+
+    .main {
+        width: 80%;
+        margin: 0 auto;
+        background: transparent-background;
+        font: font-family Iosevka, font-weight regular, font-size medium;
+
+        p {
+            $font-size: regular;
+            color : color-text;
+        }
+    }
